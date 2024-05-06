@@ -4,7 +4,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.listen(5000);
+app.listen(80 || 443);
 
 app.get('/', (req, res) => {
   res.render('index');
